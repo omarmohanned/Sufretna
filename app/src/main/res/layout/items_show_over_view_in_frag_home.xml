@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="202dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:gravity="left"
+        android:text="TextView"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_order_time"
+        android:layout_width="162dp"
+        android:layout_height="29dp"
+        android:layout_gravity="left"
+
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <TextView
+        android:id="@+id/place_item"
+        android:layout_width="202dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:gravity="left"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_order_time" />
+
+    <Button
+        android:id="@+id/take_order"
+        android:layout_width="195dp"
+        android:layout_height="55dp"
+        android:layout_gravity="right"
+        android:layout_marginStart="196dp"
+        android:background="@drawable/edge_for_button_in_app"
+        android:text="Take order"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/show_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="@+id/show_order" />
+
+    <Button
+        android:id="@+id/show_order"
+        android:layout_width="195dp"
+        android:layout_height="55dp"
+        android:layout_gravity="right"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edge_for_button_in_app"
+        android:text="Show order"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/place_item"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="163dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:text="price"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toEndOf="@+id/place_item"
+        app:layout_constraintTop_toBottomOf="@+id/maps" />
+
+    <ImageView
+        android:id="@+id/image_item"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_gravity="center"
+        android:keepScreenOn="true"
+        android:paddingBottom="30dp"
+        app:layout_constraintStart_toEndOf="@+id/take_order"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <ImageView
+        android:id="@+id/add_to_fav"
+        android:layout_width="58dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_star_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/maps"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/maps"
+        android:layout_width="42dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_drawer_map_pin"
+        android:clickable="true"
+        app:layout_constraintStart_toEndOf="@+id/item_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

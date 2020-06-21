@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home"/>
+
+        <item
+            android:id="@+id/favourts"
+            android:icon="@drawable/ic_favorite_border_black_24dp"
+            android:title="Favourites" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Taken orders" />
+        <item
+            android:id="@+id/my_orders"
+            android:icon="@drawable/ic_baseline_shopping_basket_24"
+            android:title="My Orders" />
+
+
+        <item android:id="@+id/places"
+            android:title="LOCATIONS">
+            <menu>
+                <item
+                    android:id="@+id/AMMAN"
+                    android:title="AMMAN"
+                    android:icon="@drawable/ic_place_black_24dp"></item>
+                <item android:id="@+id/IRBID"
+                    android:title="IRBID"
+                    android:icon="@drawable/ic_place_black_24dp"
+                    ></item>
+                <item android:id="@+id/AQABA"
+                    android:title="AQABA"
+                    android:icon="@drawable/ic_place_black_24dp"
+                    ></item>
+
+
+            </menu>
+        </item>
+        <item android:id="@+id/secondary"
+            android:title="SECONDERY">
+            <menu>
+                <item
+                    android:id="@+id/tutorial"
+                    android:title="Help"
+                    android:icon="@drawable/ic_help_black_24dp"></item>
+                <item android:id="@+id/settings"
+                    android:title="Settings"
+                    android:icon="@drawable/ic_settings_black_24dp"
+                    ></item>
+                <item android:id="@+id/sign_out"
+                    android:title="Sign out"
+                    android:icon="@drawable/ic_exit_to_app_black_24dp"
+                    ></item>
+
+            </menu>
+        </item>
+
+
+
+    </group>
+</menu>

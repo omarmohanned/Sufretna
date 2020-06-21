@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#40C4FF</color>
+    <color name="colorPrimaryDark">#CA2129</color>
+    <color name="colorAccent">#040404</color>
+    <color name="white">#FFFFFF</color>
+    <color name="off_blue">#AC9A52</color>
+    <color name="blue_gray">#6F2F5B87</color>
+    <color name="green">#188665</color>
+    <color name="logo_main_color">#CA2129</color>
+    <color name="nav_bar">#CA2129</color>
+    <color name="off_white">#B88B91A0</color>
+    <color name="colorAccentLight">#FF7474</color>
+    <color name="gold">#FFD600</color>
+    <color name="black">#040404</color>
+
+
+
+
+
+</resources>
